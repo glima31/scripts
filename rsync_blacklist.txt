@@ -1,0 +1,9 @@
+.cache
+.cargo
+.npm
+.rustup
+.ssh
+
+.venv
+target
+node_modules
