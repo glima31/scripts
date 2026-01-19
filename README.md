@@ -4,7 +4,7 @@ I decided to make this public as a reference for others looking to automate thei
 
 ## Installation
 ```bash
-git clone git@github.com:glima31/eos-housekeeping.git
+git clone https://codeberg.org/glima31/eos-housekeeping.git
 cd eos-housekeeping
 chmod +x install.sh
 ./install.sh
