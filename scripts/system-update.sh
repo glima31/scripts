@@ -1,6 +1,13 @@
 #!/bin/bash
 
-echo "==> Before proceeding, check Arch news: https://archlinux.org/news/"
+echo -en "==> Backup to NAS first? [y/N] "
+read -r response
+if [[ "$response" =~ ^[Yy]$ ]]; then
+    echo "==> Starting backup..."
+    nas-backup
+fi
+
+echo -e "\n==> Before proceeding with the update, check Arch news: https://archlinux.org/news/"
 echo "Press Enter when ready (or Ctrl+C to abort)..."
 read
 
