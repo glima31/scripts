@@ -15,11 +15,12 @@ echo -e "\n==> Orphaned packages:"
 pacman -Qtd || echo "None found."
 echo ""
 
-echo "==> Failed services:"
+echo -e "\n==> Failed services:"
 systemctl --failed
-echo -en "\nContinue with update? [y/N] "
+
+echo -en "\nContinue with update? [Y/n] "
 read -r response
-[[ ! "$response" =~ ^[Yy]$ ]] && echo "Aborted." && exit 1
+[[ "$response" =~ ^[Nn]$ ]] && echo "Aborted." && exit 1
 
 echo -en "\nRefresh mirrorlist? [y/N] "
 read -r response
