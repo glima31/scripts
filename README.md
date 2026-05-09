@@ -17,6 +17,7 @@ export PATH="$HOME/.local/bin:$PATH"
 ## Usage
 After running the installation script, the following commands will be available:
 ```bash
-system-update    # update Arch packages + Flatpak + Rust toolchain 
+ebook-backup     # incremental backup of my Calibre Library + my Pocketbook Books/ and applications/ folders to a local directory (rsync)
 nas-backup       # incremental backup to NAS (rsync)
+system-update    # update Arch packages + Flatpak + Rust toolchain 
 ```
