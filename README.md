@@ -9,6 +9,13 @@ chmod +x install.sh
 ./install.sh
 ```
 
+By default `install.sh` installs every script. To install only a subset, pass
+the script names (without the `.sh` extension) as arguments:
+```bash
+./install.sh backup ebook-backup   # only these two (e.g. on Fedora Kinoite, skipping eos-update)
+```
+An unknown name aborts the install.
+
 Make sure `~/.local/bin` is in your `$PATH`. If not, add it to `~/.zshrc`:
 ```bash
 export PATH="$HOME/.local/bin:$PATH"
@@ -17,7 +24,7 @@ export PATH="$HOME/.local/bin:$PATH"
 ## Usage
 After running the installation script, the following commands will be available:
 ```bash
+backup           # incremental backup of my /mnt/data partition to NAS (rsync)
 ebook-backup     # incremental backup of my Calibre Library + my Pocketbook Books/ and applications/ folders to a local directory (rsync)
-nas-backup       # incremental backup to NAS (rsync)
-system-update    # update Arch packages + Flatpak + Rust toolchain 
+eos-update       # interactive EndeavourOS/Arch update: packages + Flatpak + Rust toolchain
 ```
