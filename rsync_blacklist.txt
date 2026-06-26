@@ -7,6 +7,3 @@
 .venv
 target
 node_modules
-
-.local/share/baloo/index
-.var/app/org.chromium.Chromium/
