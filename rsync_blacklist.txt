@@ -2,7 +2,6 @@
 .cargo
 .npm
 .rustup
-.ssh
 
 .venv
 target
